@@ -16,5 +16,3 @@ Supports following languages:
 -Bulgarian
 
 The reason for this number of language support, is that they are generally popular language used in Turkey.
-
-Author: SelmanDedeakay
