@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>319</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>319</width>
+    <height>773</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>319</width>
+    <height>773</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>T-Widget</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/1jojVVCOMkX9Wyrexe4hGe...png</normaloff>:/icons/1jojVVCOMkX9Wyrexe4hGe...png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_logo">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>256</width>
+      <height>114</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons.qrc">:/icons/1jojVVCOMkX9Wyrexe4hGfNk5HZEAa3AiR1TN9NmkdAhlkSYpgfts8OtdERBpAQGghIOc8I0iCF6VJZE0kU7tmLSfMhOWg.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>258</width>
+      <height>666</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_menu">
+       <property name="text">
+        <string>Menü Dili:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_english">
+       <property name="text">
+        <string>ENG</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_turkish">
+       <property name="text">
+        <string>TR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QLabel" name="label_languageFrom">
+       <property name="font">
+        <font>
+         <family>-apple-system,.SF NS Text,Helvetica Neue,Lucida Grande</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Çeviri Yapılacak Dil:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QComboBox" name="comboBox_languageFrom">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="maxVisibleItems">
+        <number>8</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Dili Algıla</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Almanca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Arapça</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bulgarca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fransızca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>İngilizce</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>İspanyolca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>İtalyanca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Japonca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Portekizce</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rusça</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Türkçe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yunanca</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_languageTo">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Çevirilecek Dil:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="2">
+      <widget class="QComboBox" name="comboBox_languageTo">
+       <property name="currentIndex">
+        <number>10</number>
+       </property>
+       <property name="maxVisibleItems">
+        <number>8</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Almanca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Arapça</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bulgarca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fransızca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>İngilizce</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>İspanyolca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>İtalyanca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Japonca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Portekizce</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rusça</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Türkçe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yunanca</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="2">
+      <widget class="QTextEdit" name="textEdit_text">
+       <property name="placeholderText">
+        <string>Çevirilecek Metni Giriniz:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QTextEdit" name="textEdit_translated"/>
+     </item>
+     <item row="9" column="0" colspan="2">
+      <widget class="QPushButton" name="pushButton_transtlate">
+       <property name="text">
+        <string>Çevir</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>textEdit_translated</zorder>
+    <zorder>label_menu</zorder>
+    <zorder>pushButton_english</zorder>
+    <zorder>pushButton_turkish</zorder>
+    <zorder>label_languageFrom</zorder>
+    <zorder>comboBox_languageFrom</zorder>
+    <zorder>label_languageTo</zorder>
+    <zorder>comboBox_languageTo</zorder>
+    <zorder>textEdit_text</zorder>
+    <zorder>pushButton_transtlate</zorder>
+   </widget>
+   <widget class="QPushButton" name="pushButton_darkmode">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../day-and-night.png</normaloff>../day-and-night.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEng">
+   <property name="text">
+    <string>Eng</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_english</sender>
+   <signal>clicked()</signal>
+   <receiver>label_menu</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>69</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
