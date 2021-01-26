@@ -2,13 +2,13 @@
 # author: github.com/SelmanDedeakay
 #
 from PyQt5 import QtCore, QtGui, QtWidgets
-import keyboard
-from textblob import TextBlob
-from languages import *
+import keyboard #for adding hotkeys
+from textblob import TextBlob #for translating. It gets information from the Google Translate
+from languages import * #It contains our language codes
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("MainWindow") #It's all about the design until the line 115
         MainWindow.resize(319, 830)
         MainWindow.setMinimumSize(QtCore.QSize(319, 830))
         MainWindow.setMaximumSize(QtCore.QSize(319, 830))
@@ -113,9 +113,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.comboBox_languageFrom.setCurrentIndex(0)
         self.comboBox_languageTo.setCurrentIndex(10)
-        self.menulang = "TR"
-        keyboard.add_hotkey('enter', lambda: self.pushButton_translate.click())
-        self.pushButton_translate.clicked.connect(self.translate)
+        self.menulang = "TR" #Basicly the default display language is Turkish.
+        keyboard.add_hotkey('enter', lambda: self.pushButton_translate.click()) #It does the translate when pressed "ENTER"  on keyboard as a hotkey
+        self.pushButton_translate.clicked.connect(self.translate) #It runs the translate function when clicked.
 
         self.pushButton_english.clicked.connect(self.changeMenuENG)
         self.pushButton_turkish.clicked.connect(self.changeMenuTR)
